@@ -1,0 +1,129 @@
+{
+  "certificate_id": "string",
+  "timestamp": "datetime (ISO 8601)",
+
+  "soil_params": {
+    "soil": "string",
+    "humus": "percent (%)",
+    "density": "mass density (g/cm3)",
+    "z_ref": "depth (m)",
+    "cn_humus": "dimensionless ratio"
+  },
+
+  "domain_profile": {
+    "Soil Disturbance": "enum",
+    "Pesticides": "enum",
+    "Biomass Flows": "enum",
+    "Biodiversification": "enum",
+    "Fertilizers": "enum",
+    "Production System": "enum",
+    "Hydrology": "enum"
+  },
+
+  "metrics": {
+    "GOeff": "dimensionless",
+    "MINeff": "dimensionless",
+    "EKeff": "dimensionless",
+    "CO2e_total": "mass (kg CO2e)",
+    "biochar": "mass (kg)"
+  },
+
+  "co2e_data": {
+    "n_losses": "mass (kg N)",
+    "co2e_n2o": "mass (kg CO2e)",
+
+    "pools": {
+      "B1": {
+        "N_change": "mass (kg N)",
+        "CO2e_storage": "mass (kg CO2e)"
+      },
+      "B2": {
+        "N_change": "mass (kg N)",
+        "CO2e_storage": "mass (kg CO2e)"
+      },
+      "B3": {
+        "N_change": "mass (kg N)",
+        "CO2e_storage": "mass (kg CO2e)"
+      }
+    },
+
+    "fossil": "mass (kg CO2e)",
+    "biochar": "mass (kg CO2e)",
+    "net": "mass (kg CO2e)"
+  },
+
+  "metadata": {
+    "ace_cust_id": "string",
+    "year": "year (YYYY)",
+    "scenario": "string",
+    "ace_version": "semantic version"
+  },
+
+  "input": {
+    "id": "string",
+    "year": "year (YYYY)",
+    "cost": "currency amount",
+    "currency": "ISO 4217 code",
+    "biochar": "mass (kg)",
+    "method": "string",
+    "land_use": "string",
+    "area_ha": "area (ha)",
+
+    "Soil": "string",
+
+    "TS_grain_prev": "mass (kg)",
+    "TS_FG_prev": "mass (kg)",
+    "TS_grain": "mass (kg)",
+    "TS_FG": "mass (kg)",
+
+    "Measured_N_prev": "mass (kg N)",
+    "Measured_N": "mass (kg N)",
+    "Fertilized_N": "mass (kg N)",
+
+    "Soil_Disturbance": "enum",
+    "Biomass_Flows": "enum",
+    "Pesticides": "enum",
+    "Biodiversification": "enum",
+    "Fertilizers": "enum",
+    "Production_System": "enum",
+    "Hydrology": "enum",
+
+    "m3sk_inc": "volume (m3sk)",
+    "TS_perennial": "mass (kg)"
+  },
+
+  "hashes": {
+    "input": "sha256 hash",
+    "scenario": "sha256 hash",
+    "calculation": "sha256 hash",
+    "method": "sha256 hash"
+  },
+
+  "IS": {
+    "Measured_N_prev": "mass (kg N)",
+    "Measured_N": "mass (kg N)",
+    "Fertilized_N": "mass (kg N)",
+    "Deposition": "mass (kg N)",
+    "N_fix": "mass (kg N)",
+    "Biomass_uptake": "mass (kg N)",
+    "N_losses": "mass (kg N)",
+    "SE": "dimensionless"
+  },
+
+  "pools": {
+    "B1_prev": "mass (kg N)",
+    "B2_prev": "mass (kg N)",
+    "B3_prev": "mass (kg N)",
+    "opening": "mass (kg N)"
+  },
+
+  "closing": {
+    "B1": "mass (kg N)",
+    "B2": "mass (kg N)",
+    "B3": "mass (kg N)",
+    "closing": "mass (kg N)",
+    "change": "mass (kg N)"
+  },
+
+  "mineralisering": "mass (kg N)"
+}
